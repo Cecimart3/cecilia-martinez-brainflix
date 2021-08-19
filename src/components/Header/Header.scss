@@ -1,0 +1,13 @@
+@use 'SearchBar/SearchBar.scss' as *;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //height: 10.6rem;
+
+    &__logo {
+        height: 2rem;
+        margin: .5rem;
+    }
+}
