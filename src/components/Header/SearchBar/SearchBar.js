@@ -3,10 +3,10 @@ import magnifyGlass from '../../../assets/Icons/Icon-search.svg'
 
 const SearchBar = () => {
     return (
-        <div>
+        <div className='search'>
             {/* <img src={magnifyGlass} alt='Magnifying Glass'/> */}
             <input 
-            className='search-bar'
+            className='search__bar'
             type='search'
             placeholder='Search'
             />

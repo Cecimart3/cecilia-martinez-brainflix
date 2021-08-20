@@ -1,13 +1,22 @@
-@use 'SearchBar/SearchBar.scss' as *;
+@use './SearchBar/SearchBar.scss' as *;
+@use '../Button/Button.scss' as *;
 
 .header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     //height: 10.6rem;
+    margin-bottom: 1rem;
 
     &__logo {
         height: 2rem;
         margin: .5rem;
+    }
+
+    &__submit {
+        margin-top: .5rem;
+        margin-left: 2.5%;
+        display: flex;
+        width: 95%;
     }
 }
