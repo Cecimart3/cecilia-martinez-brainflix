@@ -1,0 +1,36 @@
+.description {
+    margin: 1rem;
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__posted {
+        display: flex;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    &__channel {
+        margin-right: 1rem;
+    }
+
+    &__counter {
+        display: flex;
+        margin-bottom: 1.5rem;
+    }
+
+    &__views {
+        display: flex;
+        margin-right: 2rem;
+    }
+
+    &__likes {
+        display: flex;
+    }
+
+    &__views-icon,
+    &__likes-icon {
+        margin-right: .5rem;
+    }
+}
