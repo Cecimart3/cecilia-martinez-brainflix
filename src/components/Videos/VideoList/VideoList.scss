@@ -1,6 +1,22 @@
 .video-list {
+    width: 90%;
+    margin-left: 5%;
+    list-style: none;
+    
+
+    &__item {
+        display: flex;
+        margin-bottom: 1rem;
+    }
 
     &__image {
-        width: 10rem;
+        height: 6rem;
+        width: 30%;
+        border-radius: .25rem;
+        margin-right: 1rem;
+    }
+
+    &__info {
+        width: 50%;
     }
 }

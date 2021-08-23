@@ -37,7 +37,8 @@ class App extends React.Component {
         <Comments selectedVideo={this.state.selectedVideo}/>
         <VideoList 
           updateSelectedVideo={this.updateSelectedVideo}
-          nextVideos={this.state.nextVideos} 
+          nextVideos={this.state.nextVideos}
+          selectedVideo={this.state.selectedVideo} 
         />
       </main>
     );

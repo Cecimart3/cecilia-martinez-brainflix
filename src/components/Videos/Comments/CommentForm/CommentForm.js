@@ -3,19 +3,21 @@ import Icon from '../../../Icon/Icon';
 import Button from '../../../Button/Button';
 
 const CommentForm = ({ selectedVideo }) => {
-    //console.log(selectedVideo)
     return (
-        <div>
+        <div className='comment-form'>
             <h3>{selectedVideo.comments.length} Comments</h3>
-            <form>
-                <h5>Join the Conversation</h5>
-                <div>
+            <div className='comment-form__form-container'>
+                <div className='comment-form__icon'>
                     <Icon />
                 </div>
-                <textarea name='comment' placeholder='Write comment here'></textarea>
-                <Button />
-            </form>
+                <form className='comment-form__form'>
+                    <h5 className='comment-form__title'>Join the Conversation</h5>
+                    <textarea className='comment-form__text-area' name='comment' placeholder='Write comment here'></textarea>
+                    <Button className='comment-form__button' buttonType='COMMENT'/>
+                </form>
+            </div>
         </div>
+          
     )
 }
 

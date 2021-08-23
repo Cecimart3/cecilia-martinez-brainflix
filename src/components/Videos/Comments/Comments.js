@@ -1,22 +1,26 @@
+import './Comments.scss';
 
 const Comments = ({ selectedVideo }) => {
     return (
-        <ul> 
+        <ul className='comments'> 
             {selectedVideo.comments.map(CommentComponent)}
         </ul>
     )
 }
 
 const CommentComponent = (comment) => {
+    const date = new Date(comment.timestamp)
+    const postDate = date.toLocaleDateString()
     return ( 
-        <li key={comment.id}>
-            <div className='icon'></div>
-            <div>
-                <div>
-                    <h4>{comment.name}</h4>
-                    <h5>{comment.timestamp}</h5>
+        <li className='comments__item' key={comment.id}>
+            <div className='comments__icon'>
+            </div>
+            <div className='comments__info'>
+                <div className='comments__posted'>
+                    <h4 className='comments__user'>{comment.name}</h4>
+                    <h5 className='comments__date'>{postDate}</h5>
                 </div>
-                <p>{comment.comment}</p>
+                <p className='comments__comment'>{comment.comment}</p>
             </div>
         </li>
     )

@@ -1,0 +1,42 @@
+@use '../../../partials/variables' as *;
+@use '../../../partials/mixins' as *;
+
+.comments {
+    margin: 2rem;
+    list-style: none;
+
+    &__item {
+        display: flex;
+        
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $mercury;
+    }
+
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+        background-color: $mercury;
+        border-radius: 100%;
+        flex-shrink: 0;
+        margin-right: 1rem;
+    }
+
+    &__posted {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    &__user {
+        @include mobile-subheader-text;
+        line-height: 1rem;
+
+    }
+
+    &__date {
+        @include mobile-labels-text;
+        line-height: .9rem;
+    }
+}

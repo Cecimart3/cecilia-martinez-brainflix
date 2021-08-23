@@ -1,21 +1,32 @@
+@use '../../../partials/mixins' as *;
+@use '../../../partials/variables' as *;
+
 .description {
     margin: 1rem;
 
     &__title {
+        @include mobile-header-text;
         margin-bottom: 1rem;
     }
 
     &__posted {
         display: flex;
         width: 100%;
+        align-items: center;
         margin-bottom: 1.5rem;
     }
 
     &__channel {
+        @include mobile-subheader-text;
         margin-right: 1rem;
     }
 
+    &__date {
+        @include mobile-labels-text;
+    }
+
     &__counter {
+
         display: flex;
         margin-bottom: 1.5rem;
     }
@@ -25,12 +36,24 @@
         margin-right: 2rem;
     }
 
+    &__views-count {
+        @include mobile-body-text;
+    }
+
     &__likes {
         display: flex;
+    }
+
+    &__likes-count {
+        @include mobile-body-text;
     }
 
     &__views-icon,
     &__likes-icon {
         margin-right: .5rem;
+    }
+
+    &__description {
+        @include mobile-body-text;
     }
 }

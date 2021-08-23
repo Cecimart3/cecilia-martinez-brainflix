@@ -1,10 +1,11 @@
 import './Button.scss';
+import '../Header/Header.scss';
 
-const Button = () => {
+const Button = ({ buttonType, className }) => {
     return (
-        <div className='button'>
-            <button className='button__container' type='submit'>UPLOAD</button>
-        </div> 
+        <button className={className} type='submit'>
+            {buttonType}
+        </button>
     )
 }
 

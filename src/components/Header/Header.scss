@@ -1,5 +1,6 @@
 @use './SearchBar/SearchBar.scss' as *;
 @use '../Button/Button.scss' as *;
+@use '../../partials/mixins.scss' as *;
 
 .header {
     display: flex;
@@ -19,4 +20,18 @@
         display: flex;
         width: 95%;
     }
+
+    &__button {
+        @include button;
+        background-image: url(../../assets/Icons/Icon-upload.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 35%;
+    }
 }
+
+
+
+
+
+    

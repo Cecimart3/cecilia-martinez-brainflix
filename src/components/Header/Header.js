@@ -10,7 +10,7 @@ const Header = () => {
         <img className='header__logo' src={logo} alt="Brainflix Logo"/>
         <SearchBar />
         <div className='header__submit'>
-            <Button />
+            <Button className='header__button' buttonType='UPLOAD'/>
             <Icon />
         </div>
     </header>

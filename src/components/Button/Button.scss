@@ -1,16 +1,15 @@
 @use '../../partials/variables' as *;
 
 .button {
+    height: 3rem;
+    width: 85vw;
+    background-color: $brainflix-light-blue;
+    border: none;
+    border-radius: .25rem;
+    color: white;
+    margin-right: 1rem;
 
-
-    &__container {
-        height: 3rem;
-        width: 85vw;
-        background-color: $brainflix-light-blue;
-        border: none;
-        border-radius: .25rem;
-        color: white;
-        margin-right: 1rem;
+    &:hover {
+        background-color: $brainflix-blue;
     }
-    
 }

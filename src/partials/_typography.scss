@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url(../assets/fonts/woff2/AvenirNextLTPro-Regular.woff2),
+    url(../assets/fonts//woff/AvenirNextLTPro-Regular.woff),
+    url('../assets/fonts/ttf/Linotype\ -\ Avenir\ Next\ LT\ Pro.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url(../assets/fonts/woff2/AvenirNextLTPro-Demi.woff2),
+        url(../assets/fonts/woff/AvenirNextLTPro-Demi.woff),
+        url('../assets/fonts/ttf/Linotype\ -\ Avenir\ Next\ LT\ Pro\ Demi.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url(../assets/fonts/woff2/AvenirNextLTPro-Bold.woff2),
+        url(../assets/fonts/woff/AvenirNextLTPro-Bold.woff),
+        url('../assets/fonts/ttf/Linotype\ -\ Avenir\ Next\ LT\ Pro\ Heavy.ttf');
+    font-weight: 700;
+}

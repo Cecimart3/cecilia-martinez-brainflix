@@ -1,0 +1,70 @@
+@use 'typography' as *;
+@use 'variables' as *;
+
+// Fonts //
+@mixin text($fontsize, $fontweight, $lineheight) {
+    font-family: 'Avenir';
+    font-size: $fontsize;
+    font-weight: $fontweight;
+    line-height: $lineheight;
+}
+
+// Mobile Fonts
+@mixin mobile-header-text {
+    @include text(1.5rem, 700, 2rem)
+}
+
+@mixin mobile-subheader-text {
+    @include text(1rem, 600, 2rem)
+}
+
+@mixin mobile-body-text {
+    @include text(1rem, 400, 1.5rem)
+}
+
+@mixin mobile-labels-text {
+    @include text(.8rem, 600, 1.25rem);
+    color: $silver
+}
+
+// Tablet & Desk Fonts
+@mixin hero-header-text {
+    @include text(3.75rem, 700, 4.25rem)
+}
+
+@mixin td-header1-text {
+    @include text(2.25rem, 700, 2.75rem)
+}
+
+@mixin td-header2-text {
+    @include text(1.5rem, 700, 2rem)
+}
+
+@mixin td-subheader-text {
+    @include text(1rem, 600, 1.5rem)
+} 
+
+@mixin td-body-text {
+    @include text(.875rem, 400, 1.375rem)
+}
+
+@mixin td-labels-text {
+    @include text(.75rem, 600, 1.25rem)
+}
+
+// Components
+
+@mixin button {
+    @include mobile-subheader-text;
+    height: 3rem;
+    width: 85vw;
+    background-color: $brainflix-light-blue;
+    border: none;
+    border-radius: .25rem;
+    color: white;
+    margin-right: 1rem;
+
+    &:hover {
+        background-color: $brainflix-blue;
+    }
+}

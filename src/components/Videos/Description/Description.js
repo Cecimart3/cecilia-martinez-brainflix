@@ -3,12 +3,14 @@ import views from '../../../assets/Icons/Icon-views.svg';
 import likes from '../../../assets/Icons/Icon-likes.svg';
 
 const Description = ({ selectedVideo }) => {
+    const date = new Date(selectedVideo.timestamp)
+    const postDate = date.toLocaleDateString()
     return (
         <div className='description'>
             <h1 className='description__title'>{selectedVideo.title}</h1>
             <div className='description__posted'>
                 <h3 className='description__channel'>By {selectedVideo.channel}</h3>
-                <h4 className='description__date'>{selectedVideo.timestamp}</h4>
+                <h4 className='description__date'>{postDate}</h4>
             </div>
             <div className='description__counter'>
                 <div className='description__views'>

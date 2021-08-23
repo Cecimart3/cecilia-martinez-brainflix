@@ -1,0 +1,37 @@
+@use '../../../../partials/mixins' as *;
+@use '../../../../partials/variables' as *;
+
+.comment-form {
+    width: 95%;
+    margin-left: 2.5%;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $mercury;
+
+    &__form-container {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    &__icon {
+        margin-right: 1rem;
+        padding-bottom: 4rem
+    }
+
+    &__title {
+        @include mobile-subheader-text
+    }
+
+    &__text-area {
+        @include mobile-body-text;
+        width: 97%;
+        resize: none;
+        height: 6rem;
+        padding: 1rem;
+
+    }
+
+    &__button {
+        @include button
+    }
+}
