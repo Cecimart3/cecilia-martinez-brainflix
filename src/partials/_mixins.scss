@@ -41,15 +41,15 @@
 }
 
 @mixin td-subheader-text {
-    @include text(1rem, 600, 1.5rem)
+    @include text(1rem, 600, 1rem)
 } 
 
 @mixin td-body-text {
-    @include text(.875rem, 400, 1.375rem)
+    @include text(1rem, 400, 1.5rem)
 }
 
 @mixin td-labels-text {
-    @include text(.75rem, 600, 1.25rem)
+    @include text(1rem, 600, 1.25rem)
 }
 
 // Components

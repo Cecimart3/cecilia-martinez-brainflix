@@ -7,7 +7,6 @@
 
     &__item {
         display: flex;
-        
         margin-bottom: 1rem;
         padding-bottom: 1rem;
         border-bottom: 1px solid $mercury;
@@ -39,6 +38,7 @@
         line-height: 1rem;
 
         @include tablet {
+            @include td-subheader-text;
             margin-right: 1rem;
         }
     }
@@ -46,12 +46,17 @@
     &__date {
         @include mobile-labels-text;
         line-height: .9rem;
+
+        @include tablet {
+            @include td-labels-text;
+        }
     }
 
     &__comment {
         @include mobile-body-text;
 
         @include tablet {
+            @include td-body-text;
             width: 39rem;
         }
     }

@@ -14,6 +14,10 @@
         align-items: center;
     }
 
+    @include desktop {
+        margin: 1rem 10rem;
+    }
+
     &__logo {
         height: 2rem;
         margin: .5rem;
@@ -38,10 +42,6 @@
 
     &__button {
         @include button;
-        // background-image: url(../../assets/Icons/Icon-upload.svg);
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-position-x: 35%;
 
         &::before {
             content: url(../../assets/Icons/Icon-upload.svg);

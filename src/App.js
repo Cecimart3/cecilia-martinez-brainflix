@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Header from './components/Header/Header';
 import CurrentVideo from './components/Videos/CurrentVideo/CurrentVideo';
 import Description from './components/Videos/Description/Description';
@@ -32,14 +32,20 @@ class App extends React.Component {
       <main>
         <Header />
         <CurrentVideo selectedVideo={this.state.selectedVideo} />
-        <Description selectedVideo={this.state.selectedVideo}/>
-        <CommentForm selectedVideo={this.state.selectedVideo}/>
-        <Comments selectedVideo={this.state.selectedVideo}/>
-        <VideoList 
-          updateSelectedVideo={this.updateSelectedVideo}
-          nextVideos={this.state.nextVideos}
-          selectedVideo={this.state.selectedVideo} 
-        />
+        <div className='main'>
+          <div className='main__info'>
+            <Description selectedVideo={this.state.selectedVideo}/>
+            <CommentForm selectedVideo={this.state.selectedVideo}/>
+            <Comments selectedVideo={this.state.selectedVideo}/>
+          </div>
+          <VideoList 
+            updateSelectedVideo={this.updateSelectedVideo}
+            nextVideos={this.state.nextVideos}
+            selectedVideo={this.state.selectedVideo} 
+          />
+
+        </div>
+   
       </main>
     );
   }   

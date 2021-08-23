@@ -12,9 +12,12 @@ const VideoList = ({ nextVideos, updateSelectedVideo, selectedVideo }) => {
         </li>)
     }
     return (
-        <ul className='video-list'> 
-            {nextVideos.filter((video) => video.id !== selectedVideo.id).map(generateVideoComponent)}
-        </ul>
+        <div>
+            <h4 className='video-list__next-title'>Next Video</h4>
+            <ul className='video-list'> 
+                {nextVideos.filter((video) => video.id !== selectedVideo.id).map(generateVideoComponent)}
+            </ul>
+        </div>
     )
 }
 

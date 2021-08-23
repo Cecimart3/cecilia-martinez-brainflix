@@ -7,6 +7,10 @@
     &__title {
         @include mobile-header-text;
         margin-bottom: 1rem;
+
+        @include tablet {
+            @include td-header1-text;
+        }
     }
 
     &__posted {
@@ -25,10 +29,18 @@
     &__channel {
         @include mobile-subheader-text;
         margin-right: 1rem;
+
+        @include tablet {
+            @include td-subheader-text;
+        }
     }
 
     &__date {
         @include mobile-labels-text;
+
+        @include tablet {
+            @include td-labels-text;
+        }        
     }
 
     &__counter {

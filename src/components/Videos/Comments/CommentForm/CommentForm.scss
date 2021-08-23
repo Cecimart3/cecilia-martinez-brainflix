@@ -30,6 +30,10 @@
     &__title {
         @include mobile-subheader-text;
         color: $silver;
+
+        @include tablet {
+            @include td-subheader-text;
+        }
     }
 
     &__input {
@@ -48,6 +52,7 @@
         padding: 1rem;
 
         @include tablet {
+            @include td-body-text;
             width: 27.5rem;
             height: 3rem;
             margin-right: 1rem;

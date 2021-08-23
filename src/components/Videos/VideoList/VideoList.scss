@@ -5,19 +5,28 @@
     margin-left: 5%;
     list-style: none;
 
+    &__next-title {
+        @include mobile-labels-text;
+        margin-left: 5%;
+        margin-bottom: 1.5rem;
 
+        @include desktop {
+            margin-left: 1rem;
+            margin-bottom: 2.5rem;
+        }
+    }
     
-
     &__item {
         display: flex;
         margin-bottom: 1rem;
     }
 
     &__image {
-        height: 4.5rem;
+        height: 5rem;
         width: 7.5rem;
         border-radius: .25rem;
         margin-right: 1rem;
+        flex-shrink: 0;
     }
 
     &__info {
@@ -26,5 +35,13 @@
         @include tablet {
             width: 30%;
         }
+
+        @include desktop {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        @include mobile-subheader-text;
     }
 }

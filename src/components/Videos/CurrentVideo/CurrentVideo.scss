@@ -16,5 +16,9 @@
         @include tablet {
             width: 90%;
         }
+
+        @include desktop {
+            width: 70%;
+        }
     }
 }
