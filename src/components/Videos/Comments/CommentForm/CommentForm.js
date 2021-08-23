@@ -12,8 +12,11 @@ const CommentForm = ({ selectedVideo }) => {
                 </div>
                 <form className='comment-form__form'>
                     <h5 className='comment-form__title'>Join the Conversation</h5>
-                    <textarea className='comment-form__text-area' name='comment' placeholder='Write comment here'></textarea>
-                    <Button className='comment-form__button' buttonType='COMMENT'/>
+                    <div className='comment-form__input'>
+                        <textarea className='comment-form__text-area' name='comment' placeholder='Write comment here'></textarea>
+                        <Button className='comment-form__button' buttonType='COMMENT'/>
+                    </div>
+   
                 </form>
             </div>
         </div>

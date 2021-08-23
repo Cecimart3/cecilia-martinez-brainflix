@@ -6,12 +6,27 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    //height: 10.6rem;
     margin-bottom: 1rem;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     &__logo {
         height: 2rem;
         margin: .5rem;
+
+        @include tablet {
+            margin-right: 10.5rem;
+        }
+    }
+
+    &__container {
+        @include tablet {
+            display: flex;
+        }
     }
 
     &__submit {
@@ -23,10 +38,19 @@
 
     &__button {
         @include button;
-        background-image: url(../../assets/Icons/Icon-upload.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-position-x: 35%;
+        // background-image: url(../../assets/Icons/Icon-upload.svg);
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-position-x: 35%;
+
+        &::before {
+            content: url(../../assets/Icons/Icon-upload.svg);
+        }
+        @include tablet {
+            margin: 0 1.5rem;
+            width: 7rem;
+            //background-position-x: 20%;
+        }
     }
 }
 

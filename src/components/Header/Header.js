@@ -8,10 +8,12 @@ const Header = () => {
     return (
     <header className='header'>
         <img className='header__logo' src={logo} alt="Brainflix Logo"/>
-        <SearchBar />
-        <div className='header__submit'>
-            <Button className='header__button' buttonType='UPLOAD'/>
-            <Icon />
+        <div className='header__container'>
+            <SearchBar />
+            <div className='header__submit'>
+                <Button className='header__button' buttonType=' UPLOAD'/>
+                <Icon />
+            </div>
         </div>
     </header>
 );}

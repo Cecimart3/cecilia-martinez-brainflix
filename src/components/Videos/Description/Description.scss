@@ -16,6 +16,12 @@
         margin-bottom: 1.5rem;
     }
 
+    &__info {
+        @include tablet {
+            display: flex;
+        }
+    }
+
     &__channel {
         @include mobile-subheader-text;
         margin-right: 1rem;
@@ -26,13 +32,14 @@
     }
 
     &__counter {
-
         display: flex;
         margin-bottom: 1.5rem;
+  
     }
 
     &__views {
         display: flex;
+        align-items: center;
         margin-right: 2rem;
     }
 
@@ -42,6 +49,7 @@
 
     &__likes {
         display: flex;
+        align-items: center
     }
 
     &__likes-count {
@@ -51,9 +59,20 @@
     &__views-icon,
     &__likes-icon {
         margin-right: .5rem;
+        
+    }
+
+    &__description-container {
+        border-top: 1px solid $mercury;
+        padding-top: 1.5rem;
     }
 
     &__description {
         @include mobile-body-text;
+
+        @include tablet {
+            width: 80%;
+            padding-bottom: 4rem;
+        }
     }
 }

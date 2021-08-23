@@ -27,16 +27,32 @@
         justify-content: space-between;
         align-items: flex-start;
         margin-bottom: 1rem;
+
+        @include tablet {
+            justify-content: flex-start;
+            align-items: baseline;
+        }
     }
 
     &__user {
         @include mobile-subheader-text;
         line-height: 1rem;
 
+        @include tablet {
+            margin-right: 1rem;
+        }
     }
 
     &__date {
         @include mobile-labels-text;
         line-height: .9rem;
+    }
+
+    &__comment {
+        @include mobile-body-text;
+
+        @include tablet {
+            width: 39rem;
+        }
     }
 }

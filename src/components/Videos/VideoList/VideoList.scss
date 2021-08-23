@@ -1,7 +1,11 @@
+@use '../../../partials/mixins.scss' as *;
+
 .video-list {
     width: 90%;
     margin-left: 5%;
     list-style: none;
+
+
     
 
     &__item {
@@ -10,13 +14,17 @@
     }
 
     &__image {
-        height: 6rem;
-        width: 30%;
+        height: 4.5rem;
+        width: 7.5rem;
         border-radius: .25rem;
         margin-right: 1rem;
     }
 
     &__info {
         width: 50%;
+
+        @include tablet {
+            width: 30%;
+        }
     }
 }
