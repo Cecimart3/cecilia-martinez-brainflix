@@ -1,51 +1,20 @@
-import React from 'react';
+import { Component } from 'react';
 import './App.scss';
+import { Switch, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
-import CurrentVideo from './components/Videos/CurrentVideo/CurrentVideo';
-import Description from './components/Videos/Description/Description';
-import videos from './assets/data/video-details.json';
-import VideoList from './components/Videos/VideoList/VideoList';
-import nextVideos from './assets/data/videos.json';
-import Comments from './components/Videos/Comments/Comments';
-import CommentForm from './components/Videos/Comments/CommentForm/CommentForm';
+import HomePage from './Pages/HomePage/HomePage';
+import UploadPage from './Pages/UploadPage/UploadPage'
 
-class App extends React.Component {
-  state = {
-    nextVideos,
-    videos,
-    selectedVideo: videos[0]
-  };
-
-  updateSelectedVideo = (id) => {
-    let selectedVideo = this.state.videos.find((video) => video.id === id)
-    let updatedVideoList = this.state.videos.filter((video) => video !== selectedVideo)
-    
-    this.setState({
-      selectedVideo: selectedVideo,
-      nextVideos: updatedVideoList
-    })
-    //console.log('updateSelectedVideo', this.state.selectedVideo)
-  }
+class App extends Component {
 
   render() {
     return (
       <main>
         <Header />
-        <CurrentVideo selectedVideo={this.state.selectedVideo} />
-        <div className='main'>
-          <div className='main__info'>
-            <Description selectedVideo={this.state.selectedVideo}/>
-            <CommentForm selectedVideo={this.state.selectedVideo}/>
-            <Comments selectedVideo={this.state.selectedVideo}/>
-          </div>
-          <VideoList 
-            updateSelectedVideo={this.updateSelectedVideo}
-            nextVideos={this.state.nextVideos}
-            selectedVideo={this.state.selectedVideo} 
-          />
-
-        </div>
-   
+        <Switch>
+          <Route path='/' exact component={HomePage} />
+          {/* <Route path='/UloadPage' component={UploadPage} /> */}
+        </Switch>
       </main>
     );
   }   

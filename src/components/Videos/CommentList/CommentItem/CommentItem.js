@@ -1,14 +1,6 @@
-import './Comments.scss';
+import './CommentItem.scss';
 
-const Comments = ({ selectedVideo }) => {
-    return (
-        <ul className='comments'> 
-            {selectedVideo.comments.map(CommentComponent)}
-        </ul>
-    )
-}
-
-const CommentComponent = (comment) => {
+const CommentItem = (comment) => {
     const date = new Date(comment.timestamp)
     const postDate = date.toLocaleDateString()
     return ( 
@@ -26,4 +18,4 @@ const CommentComponent = (comment) => {
     )
 }
 
-export default Comments;
+export default CommentItem;
