@@ -13,7 +13,8 @@ class App extends Component {
         <Header />
         <Switch>
           <Route path='/' exact component={HomePage} />
-          {/* <Route path='/UloadPage' component={UploadPage} /> */}
+          <Route path='/videos/:id' component={HomePage} />
+          <Route path='/UploadPage' component={UploadPage} />
         </Switch>
       </main>
     );
