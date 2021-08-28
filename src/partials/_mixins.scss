@@ -11,11 +11,11 @@
 
 // Mobile Fonts
 @mixin mobile-header-text {
-    @include text(1.5rem, 700, 2rem)
+    @include text(2rem, 700, 2.5rem)
 }
 
 @mixin mobile-subheader-text {
-    @include text(1rem, 600, 2rem)
+    @include text(1.5rem, 600, 2rem)
 }
 
 @mixin mobile-body-text {
@@ -23,7 +23,7 @@
 }
 
 @mixin mobile-labels-text {
-    @include text(.8rem, 600, 1.25rem);
+    @include text(1rem, 600, 2rem);
     color: $silver
 }
 
@@ -67,6 +67,23 @@
     &:hover {
         background-color: $brainflix-blue;
     }
+}
+
+@mixin input-field {
+    @include mobile-body-text;
+    width: 97%;
+    resize: none;
+    padding: 1rem;
+    background-color: $alabaster;
+    border: 2px solid $mercury;
+    border-radius: .25rem;
+
+
+    @include tablet {
+        @include td-body-text;
+        padding: .5rem;
+    }
+
 }
 
 // media queries //

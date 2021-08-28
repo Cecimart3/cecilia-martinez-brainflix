@@ -1,0 +1,43 @@
+@use '../../partials/variables' as *;
+@use '../../partials/mixins' as *;
+
+.upload {
+    border-top: 1px solid $mercury;
+
+    &__container {
+        margin-left: 2.5%;
+    }
+
+    &__title {
+        @include mobile-header-text;
+        margin: 2rem auto;
+    }
+
+    &__subtitle {
+        @include mobile-labels-text;
+    }
+
+    &__add-title {
+        @include input-field;
+        margin-bottom: 2rem;
+    }
+
+    &__add-description {
+        @include input-field;
+        height: 12rem;
+        margin-bottom: 2rem;
+    }
+
+    &__publish-button {
+        @include button;
+        margin-bottom: 1rem;
+        width: 97.5%
+    }
+
+    &__cancel-button {
+        @include button;
+        background-color: $white;
+        color: $brainflix-light-blue;
+        width: 97.5%
+    }
+}

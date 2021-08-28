@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Button = ({ buttonType, className }) => {
     return (
-        <Link className={className} type='submit'>
-            {buttonType}
-        </Link>
+        <button className={className} type='submit'>
+                {buttonType}
+        </button>
     )
 }
 

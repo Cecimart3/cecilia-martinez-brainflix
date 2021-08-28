@@ -5,10 +5,9 @@ import UploadVideo from '../../components/UploadVideo/UploadVideo';
 class UploadPage extends Component {
     render() {
         return (
-            <body>
-                <h1>Upload Page</h1>
+            <section>
                 <UploadVideo />
-            </body>
+            </section>
 
         )
     }
