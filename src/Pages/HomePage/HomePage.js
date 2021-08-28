@@ -21,11 +21,13 @@ class HomePage extends Component {
             nextVideos: response.data,
           }) 
           return response.data[0].id
-        }).then(id => this.updateVideos(id))
+        }).then(id => this.updateVideos(id)).catch(() => console.log('error'))
       }
 
       componentDidUpdate(prevProps) {
-       this.updateVideos(this.props.match.params.id);
+        if(prevProps.match.params.id !== this.props.match.params.id) {
+          return this.updateVideos(this.props.match.params.id);
+        }
       }
 
       updateVideos = (id) => {

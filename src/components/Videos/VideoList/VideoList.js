@@ -1,4 +1,4 @@
-import { Link, Switch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './VideoList.scss'
 
 const VideoList = ({ nextVideos, selectedVideo }) => {
