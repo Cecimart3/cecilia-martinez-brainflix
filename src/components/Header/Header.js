@@ -1,7 +1,6 @@
 import './Header.scss';
 import logo from '../../assets/Logo/Logo-brainflix.svg';
 import SearchBar from './SearchBar/SearchBar';
-import Button from '../Button/Button';
 import Icon from '../Icon/Icon';
 import { Link } from 'react-router-dom'
 

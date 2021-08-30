@@ -1,4 +1,5 @@
-@use '../../../partials/mixins.scss' as *;
+@use '../../../partials/mixins' as *;
+@use '../../../partials/variables' as *;
 
 .video-list {
     width: 90%;
@@ -42,6 +43,12 @@
     }
 
     &__title {
-        @include mobile-subheader-text;
+        @include mobile-bold-subheader-text;
+        margin-bottom: .5rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $black;
     }
 }

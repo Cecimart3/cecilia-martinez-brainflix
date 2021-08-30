@@ -28,7 +28,7 @@
     }
 
     &__title {
-        @include mobile-subheader-text;
+        @include mobile-labels-text;
         color: $silver;
 
         @include tablet {
@@ -45,6 +45,7 @@
     }
 
     &__text-area {
+        @include input-field;
         @include mobile-body-text;
         width: 97%;
         resize: none;

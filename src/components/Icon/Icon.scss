@@ -1,6 +1,11 @@
+@use '../../partials/mixins' as *;
+
 .icon {
     height: 3rem;
     width: 3rem;
     border-radius: 100%;
-    
+
+    @include tablet {
+        height: 3.5rem;
+    }
 }

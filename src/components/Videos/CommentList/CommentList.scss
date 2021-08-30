@@ -34,7 +34,7 @@
     }
 
     &__user {
-        @include mobile-subheader-text;
+        @include mobile-bold-subheader-text;
         line-height: 1rem;
 
         @include tablet {

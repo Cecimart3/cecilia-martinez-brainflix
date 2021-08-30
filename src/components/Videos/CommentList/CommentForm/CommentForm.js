@@ -15,9 +15,9 @@ const CommentForm = ({ selectedVideo }) => {
                     <Icon />
                 </div>
                 <form className='comment-form__form' onSubmit={commentFormHandler}>
-                    <h5 className='comment-form__title'>Join the Conversation</h5>
+                    <h5 className='comment-form__title'>JOIN THE CONVERSATION</h5>
                     <div className='comment-form__input'>
-                        <textarea className='comment-form__text-area' name='comment' placeholder='Write comment here'></textarea>
+                        <textarea className='comment-form__text-area' name='comment' defaultValue='Write comment here'></textarea>
                         <Button className='comment-form__button' buttonType='COMMENT'/>
                     </div>
    

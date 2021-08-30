@@ -15,7 +15,11 @@
 }
 
 @mixin mobile-subheader-text {
-    @include text(1.5rem, 600, 2rem)
+    @include text(1.5rem, 400, 2rem)
+}
+
+@mixin mobile-bold-subheader-text {
+    @include text(1rem, 600, 1.25rem)
 }
 
 @mixin mobile-body-text {
@@ -28,8 +32,8 @@
 }
 
 // Tablet & Desk Fonts
-@mixin hero-header-text {
-    @include text(3.75rem, 700, 4.25rem)
+@mixin td-header-text {
+    @include text(4rem, 700, 4.25rem)
 }
 
 @mixin td-header1-text {

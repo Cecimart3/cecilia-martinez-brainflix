@@ -4,7 +4,7 @@ import './VideoList.scss'
 const VideoList = ({ nextVideos, selectedVideo }) => {
     const generateVideoComponent = (video) => {
         return (
-        <Link to={`/videos/${video.id}`} key={video.id}>
+        <Link to={`/videos/${video.id}`} key={video.id} className='video-list__link'>
             <li className='video-list__item'>
                 <img className='video-list__image' src={video.image} alt='video poster'/>
                 <div className='video-list__info'>
