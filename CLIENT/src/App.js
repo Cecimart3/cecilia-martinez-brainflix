@@ -14,7 +14,7 @@ class App extends Component {
         <Switch>
           <Route path='/' exact component={HomePage} />
           <Route path='/videos/:id' component={HomePage} />
-          <Route path='/UploadPage' component={UploadPage} />
+          <Route path='/uploadpage' component={UploadPage} />
         </Switch>
       </main>
     );
