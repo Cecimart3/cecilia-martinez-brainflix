@@ -31,14 +31,15 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     try {
         const videos = getVideos();
+        const videosId = req.params.id;
+        const videoIdFound = videos.find(video => video.id === videosId);
 
-        if (req.params.id === currentVideoId(videos)) {
-            return res.status(200).json(videos);
-        }
+        if (videoIdFound) {
+            res.status(200).json(videoIdFound)
+        } 
     } catch (error) {
         return res.status(500).json({ error: 'DONT WATCH THIS SHIT'})
     }
 })
-
 
 module.exports = router;

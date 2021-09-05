@@ -11,10 +11,7 @@ app.use(cors());
 const videoRoute = require('./routes/videos');
 app.use('/videos', videoRoute)
 
-// app.use((req, res, next) => {
-//     if 
-// })
-
-
+const uploadRoute = require('./routes/upload')
+app.use('/uploadpage', uploadRoute)
 
 app.listen(PORT, () => console.log('poop!'))
