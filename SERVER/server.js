@@ -2,16 +2,20 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
-const PORT = 8080
+const PORT = 8000
 
 app.use(express.json());
-app.use(express.static('assets'));
+app.use(express.static('public'));
 app.use(cors());
 
 const videoRoute = require('./routes/videos');
-app.use('/videos', videoRoute)
+app.use((req, res, next) => {
+    console.log(req.body);
+    if (req.method === 'POST' && !Object.keys(req.body).length) {
+        return res.status(400).send('Need to add content')
+    } next()
+})
 
-const uploadRoute = require('./routes/upload')
-app.use('/uploadpage', uploadRoute)
+app.use('/videos', videoRoute)
 
 app.listen(PORT, () => console.log('poop!'))
