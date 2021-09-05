@@ -48,7 +48,7 @@ const newVideo = (req) => ({
     id: uuid(),
     title: req.body.title,
     channel: 'Mohan',
-    image: 'http://localhost:8080/images/Upload-video-preview.jpg',
+    image: 'http://localhost:8000/images/Upload-video-preview.jpg',
     description: req.body.description,
     views: 0,
     likes: 0,

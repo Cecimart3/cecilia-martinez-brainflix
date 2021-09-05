@@ -10,7 +10,6 @@ app.use(cors());
 
 const videoRoute = require('./routes/videos');
 app.use((req, res, next) => {
-    console.log(req.body);
     if (req.method === 'POST' && !Object.keys(req.body).length) {
         return res.status(400).send('Need to add content')
     } next()
@@ -18,4 +17,4 @@ app.use((req, res, next) => {
 
 app.use('/videos', videoRoute)
 
-app.listen(PORT, () => console.log('poop!'))
+app.listen(PORT, () => console.log('Listening!'))

@@ -1,6 +1,4 @@
 import './Description.scss';
-import views from '../../../assets/Icons/Icon-views.svg';
-import likes from '../../../assets/Icons/Icon-likes.svg';
 import postDate from '../../../utilities/date';
 
 const Description = ({ selectedVideo }) => {
@@ -14,11 +12,11 @@ const Description = ({ selectedVideo }) => {
                 </div>
                 <div className='description__counter'>
                     <div className='description__views'>
-                        <img className='description__views-icon' src={views} alt='views icon'/>
+                        <img className='description__views-icon' src='http://localhost:8000/icons/Icon-views.svg' alt='views icon'/>
                         <h4 className='description__views-count'>{selectedVideo.views}</h4>
                     </div>
                     <div className='description__likes'>
-                        <img  className='description__likes-icon' src={likes} alt='like icon'/>
+                        <img  className='description__likes-icon' src='http://localhost:8000/icons/Icon-likes.svg' alt='like icon'/>
                         <h4 className='description__likes-count'>{selectedVideo.likes}</h4>
                     </div>
                 </div>

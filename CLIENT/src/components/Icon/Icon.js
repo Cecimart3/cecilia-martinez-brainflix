@@ -1,9 +1,8 @@
-import user from '../../assets/images/Mohan-muruge.jpg'
 import './Icon.scss';
 
 const Icon = () => {
     return (
-        <img className='icon' src={user} alt='user icon'/>
+        <img className='icon' src='http://localhost:8000/images/Mohan-muruge.jpg' alt='user icon'/>
     )
 }
 
