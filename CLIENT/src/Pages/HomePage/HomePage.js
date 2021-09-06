@@ -13,7 +13,8 @@ class HomePage extends Component {
       };
 
       componentDidMount() {
-        this.getCurrentVideo();
+        const videoId = this.props.match.params && this.props.match.params.id;
+        videoId ? this.updateVideos(videoId) : this.getCurrentVideo();
       }; 
 
       getCurrentVideo = () => {
@@ -26,8 +27,9 @@ class HomePage extends Component {
       }
 
       componentDidUpdate(prevProps) {
-        if(prevProps.match.params.id !== this.props.match.params.id) {
-          return this.updateVideos(this.props.match.params.id);
+        const videoId = this.props.match.params && this.props.match.params.id;
+        if(prevProps.match.params.id !== videoId) {
+          return videoId ? this.updateVideos(videoId) : this.getCurrentVideo();
         }
       }
 
