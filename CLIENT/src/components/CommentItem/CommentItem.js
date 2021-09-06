@@ -1,5 +1,5 @@
 import './CommentItem.scss';
-import postDate from '../../../../utilities/date';
+import postDate from '../../utilities/date';
 
 const CommentItem = (comment) => {
     return ( 

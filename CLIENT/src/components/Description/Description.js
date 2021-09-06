@@ -1,5 +1,5 @@
 import './Description.scss';
-import postDate from '../../../utilities/date';
+import postDate from '../../utilities/date';
 
 const Description = ({ selectedVideo }) => {
     return (

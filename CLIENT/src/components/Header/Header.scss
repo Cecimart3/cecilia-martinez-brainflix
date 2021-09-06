@@ -1,4 +1,4 @@
-@use './SearchBar/SearchBar.scss' as *;
+@use '../SearchBar/SearchBar.scss' as *;
 @use '../Button/Button.scss' as *;
 @use '../../partials/mixins.scss' as *;
 
@@ -47,14 +47,14 @@
 
     &__button {
         @include button;
-        @include mobile-subheader-text;
+        @include mobile-body-text;
         text-decoration: none;
         display: flex;
         align-items: center;
         justify-content: center;
 
         &::before {
-            content: url(../../assets/Icons/Icon-upload.svg);
+            content: url('http://localhost:8000/icons/Icon-upload.svg');
         }
         @include tablet {
             margin: 0 1.5rem;

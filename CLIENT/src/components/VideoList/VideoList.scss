@@ -1,10 +1,17 @@
-@use '../../../partials/mixins' as *;
-@use '../../../partials/variables' as *;
+@use '../../partials/mixins' as *;
+@use '../../partials/variables' as *;
 
 .video-list {
     width: 90%;
     margin-left: 5%;
     list-style: none;
+
+    &__container {
+        @include desktop {
+            border-left: 2px $mercury solid;
+        }
+    }
+    
 
     &__next-title {
         @include mobile-labels-text;

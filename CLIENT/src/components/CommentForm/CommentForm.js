@@ -1,6 +1,6 @@
 import './CommentForm.scss';
-import Icon from '../../../Icon/Icon';
-import Button from '../../../Button/Button';
+import Icon from '../Icon/Icon';
+import Button from '../Button/Button';
 
 const CommentForm = ({ selectedVideo }) => {
     const commentFormHandler = (e) => {

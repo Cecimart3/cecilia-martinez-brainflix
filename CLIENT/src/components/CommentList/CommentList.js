@@ -1,5 +1,5 @@
 import './CommentList.scss';
-import CommentItem from './CommentItem/CommentItem';
+import CommentItem from '../CommentItem/CommentItem';
 
 const CommentList = ({ selectedVideo }) => {
     return (

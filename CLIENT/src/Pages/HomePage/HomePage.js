@@ -1,8 +1,8 @@
 import { Component } from 'react';
 import './HomePage.scss';
-import CurrentVideo from '../../components/Videos/CurrentVideo/CurrentVideo';
-import CurrentVideoInfo from '../../components/Videos/CurrentVideo/CurrentVideoInfo/CurrentVideoInfo';
-import VideoList from '../../components/Videos/VideoList/VideoList';
+import CurrentVideo from '../../components/CurrentVideo/CurrentVideo';
+import CurrentVideoInfo from '../../components/CurrentVideoInfo/CurrentVideoInfo';
+import VideoList from '../../components/VideoList/VideoList';
 import brainflixRequests from '../../utilities/apiCalls';
 
 

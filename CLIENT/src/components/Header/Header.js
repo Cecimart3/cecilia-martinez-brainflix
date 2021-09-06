@@ -1,5 +1,5 @@
 import './Header.scss';
-import SearchBar from './SearchBar/SearchBar';
+import SearchBar from '../SearchBar/SearchBar';
 import Icon from '../Icon/Icon';
 import { Link } from 'react-router-dom'
 

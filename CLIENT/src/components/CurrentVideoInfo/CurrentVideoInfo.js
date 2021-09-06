@@ -1,6 +1,6 @@
-import Description from '../../Description/Description';
-import CommentForm from '../../CommentList/CommentForm/CommentForm';
-import CommentList from '../../CommentList/CommentList';
+import Description from '../Description/Description';
+import CommentForm from '../CommentForm/CommentForm';
+import CommentList from '../CommentList/CommentList';
 
 const CurrentVideoInfo = ({ selectedVideo }) => {
     return (

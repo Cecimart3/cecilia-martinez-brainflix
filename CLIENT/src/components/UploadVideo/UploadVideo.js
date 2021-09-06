@@ -2,7 +2,7 @@ import './UploadVideo.scss';
 import { Redirect } from 'react-router-dom';
 import { Component } from 'react';
 import brainflixRequests from '../../utilities/apiCalls';
-import UploadForm from './UploadForm/UploadForm';
+import UploadForm from '../UploadForm/UploadForm';
 
 class UploadVideo extends Component {
     state = {

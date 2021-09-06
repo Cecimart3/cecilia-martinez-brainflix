@@ -1,6 +1,6 @@
 import './UploadForm.scss';
 import UploadThumbnail from '../UploadThumbnail/UploadThumbail';
-import Button from '../../Button/Button';
+import Button from '../Button/Button';
 import { Link } from 'react-router-dom';
 
 const UploadForm = ({ uploadHandler }) => {
