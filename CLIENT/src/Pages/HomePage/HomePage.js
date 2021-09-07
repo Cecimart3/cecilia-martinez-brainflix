@@ -24,14 +24,14 @@ class HomePage extends Component {
           }) 
           return response.data[0].id
         }).then(id => this.updateVideos(id)).catch((error) => console.log(error))
-      }
+      };
 
       componentDidUpdate(prevProps) {
         const videoId = this.props.match.params && this.props.match.params.id;
         if(prevProps.match.params.id !== videoId) {
           return videoId ? this.updateVideos(videoId) : this.getCurrentVideo();
         }
-      }
+      };
 
       updateVideos = (id) => {
         brainflixRequests.getCurrentVideo(id).then(response =>
